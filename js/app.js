@@ -13,7 +13,7 @@ const cleanStorage = () => {
 };
 
 const validateNameInput = () => {
-	let status = /^[a-zA-Z]+$/.test(document.getElementById('name').value);
+	let status = /^[a-zA-Z\s]+$/.test(document.getElementById('name').value);
 	if (status === false) {
 		document.getElementById('name-error').style.display = 'block';
 	} else {
@@ -22,7 +22,7 @@ const validateNameInput = () => {
 };
 
 const validateAgeInput = () => {
-	let status = /\d{1,2}/.test(document.getElementById('age').value);
+	let status = /^\d{1,2}$/.test(document.getElementById('age').value);
 	if (status === false) {
 		document.getElementById('age-error').style.display = 'block';
 	} else {
