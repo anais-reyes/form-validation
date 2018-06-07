@@ -5,7 +5,7 @@ const patterns = {
 	age: /^\d{1,2}$/,
 	phone: /^\d{10}$/,
 	email: /^([a-z\d\.-]+)@([a-z\d-]+)\.([a-z]{2,8})(\.[a-z{2,8}])?$/,
-	about: /.{20,100}/,
+	about: /^.{10,20}$/,
 };
 
 const cleanStorage = () => {
